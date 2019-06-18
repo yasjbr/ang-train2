@@ -1,0 +1,55 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<new>
+
+</new>
+
+
+{{name}}
+
+
+<New2>
+
+</New2>
+
+
+<!--<input id="name" type="text" value="{{name}}" (input)="show()" [(ngModel)]="name">-->
+
+
+<form>
+
+
+    <label> user name: </label>
+    <input type="text" name="user" [(ngModel)]="user" />
+
+    <label> password:</label>
+    <input type="password" name="pass" [(ngModel)]="pass" />
+    <input type="submit" (click)="validate()" />
+</form>
+
+
+<p *ngIf="!status;else error">
+
+    okkkkkk  
+</p>
+
+
+
+<ng-template #error>
+    <p>
+        errrrrorrr !!!!!!!!
+    </p>
+</ng-template>
+
+<p *ngIf="status">
+
+    not okkkkkk
+</p>
+
+<h1>
+    -----------------------------
+</h1>
+<router-outlet>
+ddd
+</router-outlet>
